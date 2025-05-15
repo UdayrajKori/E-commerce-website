@@ -8,7 +8,11 @@ const Footer = () => {
             &copy; 2025 UDAYRAJ KORI. ALL RIGHT RESERVED.
           </p>
           <div className="flex justify-center mt-4 space-x-6">
-            <a href="#" className="text-gray-400 hover:text-gray-200">
+            <a
+              href="https://www.linkedin.com/in/udayraj-kori-a751a9337/"
+              target="_blank"
+              className="text-gray-400 hover:text-gray-200"
+            >
               <svg
                 class="w-6 h-6 text-gray-800 dark:text-white"
                 aria-hidden="true"
@@ -26,7 +30,11 @@ const Footer = () => {
                 <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
               </svg>
             </a>
-            <a href="#" className="text-gray-400 hover:text-gray-200">
+            <a
+              href="https://github.com/udayrajkori"
+              target="_blank"
+              className="text-gray-400 hover:text-gray-200"
+            >
               <svg
                 class="w-6 h-6 text-gray-800 dark:text-white"
                 aria-hidden="true"
@@ -43,7 +51,11 @@ const Footer = () => {
                 />
               </svg>
             </a>
-            <a href="#" className="text-gray-400 hover:text-gray-200">
+            <a
+              href="https://www.youtube.com/@onlineeducationnepal"
+              target="_blank"
+              className="text-gray-400 hover:text-gray-200"
+            >
               <svg
                 class="w-6 h-6 text-gray-800 dark:text-white"
                 aria-hidden="true"
