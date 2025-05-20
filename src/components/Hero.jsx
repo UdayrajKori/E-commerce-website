@@ -83,7 +83,7 @@ const Hero = () => {
           {products.length > 0 ? (
             products.map((product) => (
               <ProductCard
-                key={product.id}
+                id={product.id}
                 title={product.title}
                 description={product.description}
                 price={product.price}
