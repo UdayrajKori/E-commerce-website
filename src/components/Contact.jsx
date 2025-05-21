@@ -1,27 +1,4 @@
-import { useEffect, useState } from "react";
-import ShimmerCard from "./ShimmerCard"; // Reusing shimmer loading
-
 const Contact = () => {
-  const [loading, setLoading] = useState(true);
-
-  // Simulate shimmer loading
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="flex flex-wrap justify-center gap-4 p-4">
-        {Array.from({ length: 4 }).map((_, index) => (
-          <ShimmerCard key={index} />
-        ))}
-      </div>
-    );
-  }
-
   return (
     <section className="max-w-2xl mx-auto px-6 py-10">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
@@ -58,7 +35,8 @@ const Contact = () => {
           <label className="block mb-1 text-sm font-medium text-gray-700">
             Message
           </label>
-          <textarea resize="none"
+          <textarea
+            resize="none"
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
             rows="5"
             placeholder="Your message..."
