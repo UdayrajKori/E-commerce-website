@@ -41,6 +41,13 @@ const Hero = () => {
     setProducts(filtered);
   };
 
+  // Clear Filter function
+  const ClearFilter = () => {
+    setProducts(allProducts);
+    setSearchQuery("");
+    console.log("Hello");
+  };
+
   if (loading) {
     return (
       <div className="flex flex-wrap justify-center gap-4 p-4">
@@ -68,6 +75,13 @@ const Hero = () => {
               className="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
               Search
+            </button>
+
+            <button
+              onClick={ClearFilter}
+              className="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              Clear Filter
             </button>
           </div>
 

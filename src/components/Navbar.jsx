@@ -8,7 +8,13 @@ const Navbar = () => {
       <header>
         <div className="flex items-center justify-between px-10 py-3 text-2xl">
           <div>
-            <img src="title_logo.svg" alt="Store Logo" className="w-15 h-15" />
+            <Link to="/">
+              <img
+                src="title_logo.svg"
+                alt="Store Logo"
+                className="w-15 h-15"
+              />
+            </Link>
           </div>
           <ul className="flex justify-between list-none w-96 gap-10">
             <li>
