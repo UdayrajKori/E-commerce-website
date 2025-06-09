@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import Profile from "./Profile";
+import UserContext from "./context/userDetailContext";
 
-const NewProfile = (props) => {
-  const user = props.user;
+const NewProfile = () => {
+  const user = useContext(UserContext);
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white shadow-xl rounded-2xl p-6 w-80">

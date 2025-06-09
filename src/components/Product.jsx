@@ -27,6 +27,11 @@ const Product = () => {
         fetchProduct();
       }, [id]);
 
+
+      const addCart = () =>{
+        console.log("Add to cart clicked");
+      }
+
     if (!productData) {
       return <ProductShimmer/> ;
     }
@@ -65,7 +70,8 @@ const Product = () => {
               ({productData.rating?.count} reviews)
             </span>
           </div>
-          <button className="mt-4 flex items-center justify-center gap-2 px-5 py-2 bg-blue-500 text-white rounded-lg font-medium text-base hover:bg-blue-600 transition-colors">
+          <button className="mt-4 flex items-center justify-center gap-2 px-5 py-2 bg-blue-500 text-white rounded-lg font-medium text-base hover:bg-blue-600 transition-colors"
+            onClick={addCart}>
             Add to Cart
           </button>
         </div>

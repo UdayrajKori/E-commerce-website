@@ -2,6 +2,7 @@ import React from "react";
 import Profile from "./Profile";
 import profileImage from "../assets/profileImage.jpg";
 import NewProfile from "./NewProfile";
+import UserContext from "./context/userDetailContext.js";
 
 const About = () => {
   const user = {
@@ -13,9 +14,9 @@ const About = () => {
     age: 30,
   };
   return (
-    <div>
-      <Profile user={user} />
-    </div>
+    <UserContext.Provider value={user}>
+      <Profile />
+    </UserContext.Provider>
   );
 };
 
